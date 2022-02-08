@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceResource xmlns:wsdl="http://xmlns.example.com/1643781560274">
+    <ns0:import xmlns:ns0="http://schemas.xmlsoap.org/wsdl/" namespace="http://xmlns.example.com/1643781560274" location="/webservices/SharedResources/wsdl/WSDL.wsdl"/>
+    <config>
+        <wsdl namespace="http://xmlns.example.com/1643802064604" embedWsdlComponents="true" embedSchemaComponents="true" embedJndiProperties="false"/>
+        <class>com.tibco.bw.service.serviceAgent.ServiceServiceAgent</class>
+        <implType>bw</implType>
+        <groups>
+            <row isDefault="true" groupName="Default"/>
+        </groups>
+        <serviceChange>Wed Feb 02 17:32:29 IST 2022</serviceChange>
+        <interfaceImpl>
+            <tab>
+                <tabName>AddPortType</tabName>
+                <tabType>bw</tabType>
+                <config>
+                    <wsdlDetail location="/webservices/SharedResources/wsdl/WSDL.wsdl" portType="AddPortType" ns="http://xmlns.example.com/1643781560274"/>
+                    <detail>
+                        <tab>
+                            <tabName>service.definition.impl.tab.label</tabName>
+                            <tabType>impl</tabType>
+                            <config>
+                                <operations>
+                                    <row opName="Operation" opImpl=""/>
+                                </operations>
+                            </config>
+                        </tab>
+                        <tab>
+                            <tabName>service.definition.ep.tab.label</tabName>
+                            <tabType>ep</tabType>
+                            <config>
+                                <epBindings/>
+                            </config>
+                        </tab>
+                    </detail>
+                </config>
+            </tab>
+        </interfaceImpl>
+    </config>
+</serviceResource>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:ns="http://www.tibco.com/schemas/SEP_WEBSERVICESJan1/sharedResources/schema/Schema.xsd" xmlns:tns="http://xmlns.example.com/1641493428129" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xmlns.example.com/1641493428129">
+    <import namespace="http://www.tibco.com/schemas/SEP_WEBSERVICESJan1/sharedResources/schema/Schema.xsd" location="../schema/Schema.xsd"/>
+    <message name="Reqmsg">
+        <part name="part1" element="ns:ReqMsg"/>
+    </message>
+    <message name="Resmsg">
+        <part name="part1" element="ns:ResMsg"/>
+    </message>
+    <portType name="PortType">
+        <operation name="Operation">
+            <input message="tns:Reqmsg"/>
+            <output message="tns:Resmsg"/>
+        </operation>
+    </portType>
+</definitions>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 xmlns="http://www.tibco.com/schemas/SEP_WEBSERVICESJan1/JDBC/Schema.xsd"
+	 targetNamespace="http://www.tibco.com/schemas/SEP_WEBSERVICESJan1/JDBC/Schema.xsd"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:element name="customer">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="CustId"/>
+				<xs:element ref="CustName"/>
+				<xs:element ref="CustPhone"/>
+				<xs:element ref="CustAddress"/>
+				<xs:element ref="CustStatus"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CustId" type="xs:string"/>
+	<xs:element name="CustName" type="xs:string"/>
+	<xs:element name="CustPhone" type="xs:string"/>
+	<xs:element name="CustAddress" type="xs:string"/>
+	<xs:element name="CustStatus" type="xs:string"/>
+</xs:schema>

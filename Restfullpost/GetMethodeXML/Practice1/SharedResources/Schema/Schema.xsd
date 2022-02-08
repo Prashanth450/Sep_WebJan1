@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 xmlns="http://www.tibco.com/schemas/SEP_WEBSERVICESJan1/Restfullpost/GetMethode/Practice1/SharedResources/Schema/Schema.xsd"
+	 targetNamespace="http://www.tibco.com/schemas/SEP_WEBSERVICESJan1/Restfullpost/GetMethode/Practice1/SharedResources/Schema/Schema.xsd"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:element name="Customer">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="GetCustReq"/>
+				<xs:element ref="GetCustRes"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCustReq">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="CustId" type="xs:int"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCustRes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="CustId" type="xs:string"/>
+				<xs:element name="CustName" type="xs:string"/>
+				<xs:element name="CustPhone" type="xs:int"/>
+				<xs:element name="CustAddress" type="xs:string"/>
+				<xs:element name="CustStatus" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

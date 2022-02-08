@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://xmlns.example.com/1643781560274" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xmlns.example.com/1643781560274">
+    <message name="AddReqMessage">
+        <part name="Num1" type="xsd:string"/>
+        <part name="Num2" type="xsd:string"/>
+    </message>
+    <message name="AddResMessage">
+        <part name="Result" type="xsd:string"/>
+    </message>
+    <message name="SubReqessage">
+        <part name="A" type="xsd:int"/>
+        <part name="B" type="xsd:int"/>
+    </message>
+    <message name="SubResMessage">
+        <part name="C" type="xsd:int"/>
+    </message>
+    <portType name="AddPortType">
+        <operation name="Operation">
+            <input message="tns:AddReqMessage"/>
+            <output message="tns:AddResMessage"/>
+        </operation>
+    </portType>
+    <portType name="SubPortType">
+        <operation name="Operation">
+            <input message="tns:SubReqessage"/>
+            <output message="tns:SubResMessage"/>
+        </operation>
+    </portType>
+</definitions>

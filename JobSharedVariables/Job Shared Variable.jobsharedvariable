@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BWSharedResource xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <name>Job Shared Variable</name>
+    <resourceType>ae.shared.jobSharedVariable</resourceType>
+    <config xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <initialValue>none</initialValue>
+        <xsdString>
+            <xsd:element name="Event">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Event-Name" type="xsd:string"/>
+                        <xsd:element name="Event-Date" type="xsd:string"/>
+                        <xsd:element name="Event-Time" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsdString>
+    </config>
+</BWSharedResource>
